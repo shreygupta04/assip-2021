@@ -1,0 +1,33 @@
+UseScene Scene2D
+
+Scene2D
+{
+   Grid { NrDims 2 Dims [32 32] Min [-40.0 -40.0] Max [40.0 40.0] }
+   ObstacleHeight 1.0
+   ParamsExtraFile data/SceneMazeObstacles.txt
+   Boundaries { Thickness 1.0 Height 2.0 }
+}
+
+Sensor
+{
+  Radius 20
+ }
+
+
+Graphics
+{
+  Camera
+  {
+    Eye [ 0.000000  -131.129914  118.178658 ]
+    Center [ 0 0 0 ]
+    Right [ 1 0 0 ]
+    Forward [ 0 0.731354 -0.681998 ]
+  }
+
+  TextureObstaclesFile gdata/textures/terrain2.ppm
+  TextureTerrainFile gdata/textures/terrain2.ppm
+
+  ColorObstacles        [1.0 0.3 0.7]
+  ColorTerrain          [0.9 0.9 0.9]
+
+}
